@@ -76,6 +76,8 @@ def purchasePlaces():
     if competition and club:
         if placesRequired < 0:
             flash('You cannot book negative competition places.')
+        elif placesRequired == 0:
+            flash('Please chose a number between 1 and 12.')
         else:
             # new competition places
             competition['numberOfPlaces'] = str(int(competition['numberOfPlaces']) - placesRequired)
