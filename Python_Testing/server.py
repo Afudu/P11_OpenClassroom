@@ -15,7 +15,7 @@ def loadCompetitions():
         return listOfCompetitions
 
 
-def save_json(file_name, data):
+def saveJson(file_name, data):
     with open(file_name, 'w') as file:
         json.dump(data, file, indent=4)
 
@@ -97,10 +97,10 @@ def purchasePlaces():
             club['points'] = str(int(club['points']) - placesRequired)
 
             # Save competition places in JSON file
-            # save_json('competitions.json', {'competitions': competitions})
+            saveJson('competitions.json', {'competitions': competitions})
 
             # Save club points in JSON file
-            # save_json('clubs.json', {'clubs': clubs})
+            saveJson('clubs.json', {'clubs': clubs})
 
             # Display booking confirmation.
             flash('Great-booking complete!')
