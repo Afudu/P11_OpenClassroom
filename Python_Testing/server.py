@@ -28,9 +28,19 @@ def index():
 
 @app.route('/showSummary', methods=['POST'])
 def showSummary():
-    club = [club for club in clubs if club['email'] == request.form['email']][0]
-    return render_template('welcome.html', club=club, competitions=competitions)
-
+    """
+     Function checking whether the entered email address is valid and registered.
+     If valid and registered : display List of competitions.
+     Else: display error.
+    """
+    # list of club corresponding to the submitted email.
+    club_list = [club for club in clubs if club['email'] == request.form['email']]
+    if not club_list:
+        flash("That email was not found in the database. Please try again.")
+        return redirect(url_for('index'))
+    return render_template('welcome.html',
+                           club=club_list[0],
+                           competitions=competitions,)
 
 @app.route('/book/<competition>/<club>')
 def book(competition, club):
