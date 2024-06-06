@@ -85,10 +85,13 @@ def purchasePlaces():
         elif placesRequired > int(club['points']):
             flash('You do not have enough points to book this number of places.')
         else:
-            # new competition places
+            # New competition places.
             competition['numberOfPlaces'] = str(int(competition['numberOfPlaces']) - placesRequired)
 
-            # display booking confirmation
+            # New club points.
+            club['points'] = str(int(club['points']) - placesRequired)
+
+            # Display booking confirmation.
             flash('Great-booking complete!')
     else:
         flash("Something went wrong-please try again.")
