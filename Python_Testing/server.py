@@ -1,5 +1,6 @@
 import json
 from flask import Flask, render_template, request, redirect, flash, url_for
+from datetime import datetime
 
 
 def loadClubs():
@@ -19,6 +20,17 @@ app.secret_key = 'something_special'
 
 competitions = loadCompetitions()
 clubs = loadClubs()
+date_now = datetime.now()
+
+
+@app.template_filter()
+def str_to_datetime(date_string):
+    """
+    function used to convert a string representation
+    of a date and/or time into a datetime object, registered using
+     the template_filter() decorator.
+     """
+    return datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S')
 
 
 @app.route('/')
@@ -40,7 +52,9 @@ def showSummary():
         return redirect(url_for('index'))
     return render_template('welcome.html',
                            club=club_list[0],
-                           competitions=competitions, )
+                           competitions=competitions,
+                           date_now=date_now
+                           )
 
 
 @app.route('/book/<competition>/<club>')
