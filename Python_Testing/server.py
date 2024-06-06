@@ -40,7 +40,8 @@ def showSummary():
         return redirect(url_for('index'))
     return render_template('welcome.html',
                            club=club_list[0],
-                           competitions=competitions,)
+                           competitions=competitions, )
+
 
 @app.route('/book/<competition>/<club>')
 def book(competition, club):

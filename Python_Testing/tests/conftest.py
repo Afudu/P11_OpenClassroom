@@ -12,3 +12,19 @@ def client():
     client = server.app.test_client()
     yield client
 
+
+@pytest.fixture
+def mock_clubs():
+    clubs = server.clubs = [
+        {
+            "name": "Simply Lift",
+            "email": "john@simplylift.co",
+            "points": "13"
+        },
+        {
+            "name": "Iron Temple",
+            "email": "admin@irontemple.com",
+            "points": "4"
+        },
+    ]
+    yield clubs
