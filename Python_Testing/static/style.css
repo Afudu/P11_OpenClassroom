@@ -6,9 +6,3 @@ td {
     text-align: center;
 }
 
-table.border td {
-	border-style: solid;
-	border-color: #E4E3E0;
-	border-width: 1px;
-	text-align: middle;
-}
