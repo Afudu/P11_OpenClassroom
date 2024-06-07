@@ -11,5 +11,3 @@ def test_login_invalid_email(client):
     response = client.post('/showSummary', data={'email': 'invalid@example.com'})
     assert response.status_code == 302  # should redirect
     assert b'That email was not found in the database.' in client.get('/').data
-
-

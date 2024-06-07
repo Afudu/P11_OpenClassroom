@@ -29,29 +29,29 @@ def client():
 @pytest.fixture
 def mock_clubs():
     clubs = server.clubs = [
-        {
-            "name": "Simply Lift",
-            "email": "john@simplylift.co",
-            "points": "13"
-        },
-        {
-            "name": "Iron Temple",
-            "email": "admin@irontemple.com",
-            "points": "4"
-        },
-    ]
+            {
+                "name": "Simply Lift",
+                "email": "john@simplylift.co",
+                "points": "13"
+            },
+            {
+                "name": "Iron Temple",
+                "email": "admin@irontemple.com",
+                "points": "4"
+            },
+        ]
     yield clubs
 
 
 @pytest.fixture
 def mock_past_competitions():
     competitions = server.competitions = [
-        {
-            "name": "Test Festival Leixlip",
-            "date": last_week_date,
-            "numberOfPlaces": "25"
-        }
-    ]
+            {
+                "name": "Test Festival Leixlip",
+                "date": last_week_date,
+                "numberOfPlaces": "25"
+            }
+        ]
     yield competitions
 
 

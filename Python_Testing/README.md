@@ -2,7 +2,6 @@
 
 1. Why
 
-
     This is a proof of concept (POC) project to show a light-weight version of our competition booking platform. The aim is the keep things as light as possible, and use feedback from the users to iterate.
 
 2. Getting Started
@@ -20,8 +19,7 @@
 
         This ensures you'll be able to install the correct packages without interfering with Python on your machine.
 
-        Before you begin, please ensure you have this installed globally. 
-
+        Before you begin, please ensure you have this installed globally.
 
 3. Installation
 
