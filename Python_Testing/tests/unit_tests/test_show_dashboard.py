@@ -1,4 +1,3 @@
-
 def test_show_dashboard(client, mock_clubs):
     """Test that the dashboard page loads properly."""
     response = client.get('/dashBoard')

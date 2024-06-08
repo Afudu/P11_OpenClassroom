@@ -1,3 +1,14 @@
+"""
+This file contains the performance test with locust configuration.
+
+Here we define a class for the users that we will be simulating.
+It inherits from HttpUser which gives each user a client attribute, which is an instance of HttpSession,
+that can be used to make HTTP requests to the target system that we want to load test.
+When a test starts, locust will create an instance of this class for every user that it simulates,
+and each of these users will start running within their own green gevent thread.
+For a file to be a valid locustfile it must contain at least one class inheriting from User.
+"""
+
 from locust import HttpUser, task, between
 
 
