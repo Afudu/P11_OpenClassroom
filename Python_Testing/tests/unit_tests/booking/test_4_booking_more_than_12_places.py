@@ -1,8 +1,8 @@
 
-def test_booking_more_than_12_places(client, mock_clubs, mock_future_competitions):
+def test_booking_more_than_12_places(client, mock_clubs, mock_competitions):
     """Test booking more places than 12 places."""
     response = client.post('/purchasePlaces', data={
-        'competition': mock_future_competitions[0]["name"],
+        'competition': mock_competitions[1]["name"],
         'club': mock_clubs[0]["name"],
         'places': "13"
     })

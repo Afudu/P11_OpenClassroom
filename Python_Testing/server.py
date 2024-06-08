@@ -18,6 +18,14 @@ def loadCompetitions():
 def saveJson(file_name, data):
     with open(file_name, 'w') as file:
         json.dump(data, file, indent=4)
+# def saveClubs():
+#     with open('clubs.json', 'w') as c:
+#         json.dump({"clubs": clubs}, c, indent=4)
+#
+#
+# def saveCompetitions():
+#     with open('competitions.json', 'w') as comps:
+#         json.dump({"competitions": competitions}, comps, indent=4)
 
 
 app = Flask(__name__)
@@ -101,6 +109,12 @@ def purchasePlaces():
 
             # Save club points in JSON file
             saveJson('clubs.json', {'clubs': clubs})
+
+            # # Save competition places in JSON file
+            # saveCompetitions()
+            #
+            # # Save club points in JSON file
+            # saveClubs()
 
             # Display booking confirmation.
             flash('Great-booking complete!')

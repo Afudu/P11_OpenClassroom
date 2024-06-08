@@ -1,7 +1,7 @@
-def test_dashboard_login_book_logout(client, mock_clubs, mock_future_competitions):
+def test_dashboard_login_book_logout(client, mock_clubs, mock_competitions, mock_save_json):
     """Test that the secretary performs several actions as expected."""
 
-    # 1 - the secretary  visits the home page
+    # 1 - the secretary of 1st club in test data  visits the home page which is online
     response = client.get("/")
     assert response.status_code == 200
     assert b'Welcome to the GUDLFT Registration Portal!' in response.data
@@ -26,7 +26,7 @@ def test_dashboard_login_book_logout(client, mock_clubs, mock_future_competition
 
     # 5 - then books a place in one of the upcoming events
     response = client.post('/purchasePlaces', data={
-        'competition': mock_future_competitions[0]["name"],
+        'competition': mock_competitions[1]["name"],
         'club': mock_clubs[0]["name"],
         'places': '1'
     })

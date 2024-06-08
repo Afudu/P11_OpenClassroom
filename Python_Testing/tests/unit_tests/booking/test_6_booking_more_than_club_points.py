@@ -1,8 +1,8 @@
-
-def test_booking_more_than_club_points(client, mock_clubs, mock_future_competitions):
+def test_booking_more_than_club_points(client, mock_clubs, mock_competitions):
     """Test booking more places than the club's points."""
+    # test with club having 4 points and booking 5 places
     response = client.post('/purchasePlaces', data={
-        'competition': mock_future_competitions[0]["name"],
+        'competition': mock_competitions[1]["name"],
         'club': mock_clubs[1]["name"],
         'places': "5"
     })
