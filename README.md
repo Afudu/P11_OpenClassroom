@@ -12,7 +12,7 @@ The project involves enhancing the Python web application used by Güdlft, a com
 The application is built with Flask - a Python framework, and stores data in JSON files 
 to avoid database dependencies.
 
-The enhancements are implemented in phases, following the functional requirements, with a focus on testing, 
+The enhancements are broken into phases, following the functional requirements, with a focus on testing, 
 debugging and adding new features.
 
 **Phase 1:**
