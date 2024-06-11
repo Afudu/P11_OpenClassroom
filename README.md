@@ -136,8 +136,13 @@ The tests are categorized and located in the tests/ folder.
    * coverage report
 
 * To run a single test use: 
-  * pytest followed by the path to the test
-  * Example: pytest .\tests\unit_tests\test_logout.py
+  * pytest [followed by the path to the test file]
+  * Examples: 
+    * Unix/macOS
+      * pytest ./tests/unit_tests/test_logout.py
+    * Windows:
+      * pytest .\tests\unit_tests\test_logout.py
+
  
 * Note : when running the tests, the test data is not saved in the JSON files to preserve data integrity after tests. 
 
@@ -150,7 +155,8 @@ To run a performance test, with the application server running:
 1 - Move to the folder where the file locustfile.py located
    * cd tests\performance_tests\
 
-2 - Run locust
+2 - Run the locust command:
+   * locust
 
 3 Then go to http://localhost:8089/
 
