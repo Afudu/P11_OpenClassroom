@@ -53,7 +53,7 @@ The second phase introduces:
   * Public Points Board: A public, read-only board displaying the points available for each club
    without requiring login.
 
-  * Performance Requirements:** Efficient build and rendering times, ensuring competition lists are retrieved 
+  * Performance Requirements: Efficient build and rendering times, ensuring competition lists are retrieved 
 in no more than 5 seconds, and no more than 2 seconds to update the points total.
 
 # Immediate Tasks:
