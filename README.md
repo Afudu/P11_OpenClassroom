@@ -39,7 +39,7 @@ the following 4 functionalities for club secretaries:
      Each place booked reduces the competition places and the club's points by 1.
 
      Booking Restrictions: Secretaries cannot book more than the available spots, 
-     more than they can purchase,exceed 12 spots per competition, or book past competitions.
+     more than they can purchase, exceed 12 spots per competition, or book past competitions.
 
      If the booking is successful, a confirmation message is displayed; else,
      an explicit error message is displayed.
@@ -53,7 +53,7 @@ The second phase introduces:
   * Public Points Board: A public, read-only board displaying the points available for each club
    without requiring login.
 
-  * Performance Requirements:** Efficient build and rendering times, ensuring competition lists are retrieved 
+  * Performance Requirements: Efficient build and rendering times, ensuring competition lists are retrieved 
 in no more than 5 seconds, and no more than 2 seconds to update the points total.
 
 # Immediate Tasks:
