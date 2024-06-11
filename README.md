@@ -20,23 +20,23 @@ debugging and adding new features.
 The code for the initial phase is placed in this [repo](https://github.com/OpenClassrooms-Student-Center/Python_Testing/)
 and addresses the following functionalities for club secretaries:
 
-  * Login: They can log in using their email.
+  * **Login:** They can log in using their email.
 
-  * Viewing Competition List: They can view a list of upcoming competitions.
+  * **Viewing Competition List:** They can view a list of upcoming competitions.
 
-  * Booking Places:** They can select a competition and use points to book places.
+  * **Booking Places:** They can select a competition and use points to book places.
 
-     Points used will be deducted from their total.
+     - Points used will be deducted from their total.
 
-     Each place booked reduces the competition places and the club's points by 1.
+     - Each place booked reduces the competition places and the club's points by 1.
 
-     Booking Restrictions: Secretaries cannot book more than the available spots, 
+     - Booking Restrictions: Secretaries cannot book more than the available spots, 
      more than they can purchase, exceed 12 spots per competition, or book past competitions.
 
-     If the booking is successful, a confirmation message is displayed; else,
+     - If the booking is successful, a confirmation message is displayed; else,
      an explicit error message is displayed.
 
-  * Logout: They can log out of the system.
+  * **Logout:** They can log out of the system.
 
 **Phase 2:**
 
@@ -136,7 +136,9 @@ The tests are categorized and located in the tests/ folder.
 * To run a single test use: 
   * pytest followed by the path to the test
   * Example: pytest .\tests\unit_tests\test_logout.py
-    
+ 
+* Note : when running the tests, the test data is not saved in the JSON files to preserve data integrity after tests. 
+
 # Performance Test
 The performance of the application has been tested with Locust, with the rendering times adhering
 to the functional requirements : less than 5 seconds to retrieve data, and less than 2 seconds to update data.
