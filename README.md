@@ -17,10 +17,8 @@ debugging and adding new features.
 
 **Phase 1:**
 
-The initial phase is placed in this [repo](https://github.com/OpenClassrooms-Student-Center/Python_Testing/).
+The code for the initial phase is placed in this [repo](https://github.com/OpenClassrooms-Student-Center/Python_Testing/)
 and addresses the following functionalities for club secretaries:
-
-his site was built using [GitHub Pages](https://pages.github.com/).
 
   * Login: They can log in using their email.
 
