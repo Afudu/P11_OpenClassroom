@@ -6,21 +6,14 @@
 
 **Date:** 20/05/2024
 
-# Background
-Güdlft is a company that began by organizing competitions for local clubs and has grown 
-to host events exclusively for brand-name fitness apparel companies. 
-After their fifth anniversary, the company faced criticism on social media. 
-To address this, they formed a Regional Outreach team to develop a lighter weight and cost-effective 
-version of their current platform for regional organizers.
-The team has compiled a list of functional requirements for a prototype, separated into phases.
-
 # Project Scope
-The project involves enhancing the Python web application used by Güdlft.
-The enhancements are implemented in phases, following the functional requirements, with a focus on testing, 
-debugging and adding new features.
+The project involves enhancing the Python web application used by Güdlft, a company that organizes regional competitions.
 
 The application is built with Flask - a Python framework, and stores data in JSON files 
 to avoid database dependencies.
+
+The enhancements are implemented in phases, following the functional requirements, with a focus on testing, 
+debugging and adding new features.
 
 **Phase 1:**
 
