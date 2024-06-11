@@ -20,16 +20,6 @@ def saveJson(file_name, data):
         json.dump(data, file, indent=4)
 
 
-# def saveClubs():
-#     with open('clubs.json', 'w') as c:
-#         json.dump({"clubs": clubs}, c, indent=4)
-#
-#
-# def saveCompetitions():
-#     with open('competitions.json', 'w') as comps:
-#         json.dump({"competitions": competitions}, comps, indent=4)
-
-
 app = Flask(__name__)
 app.secret_key = 'something_special'
 
