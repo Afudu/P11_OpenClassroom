@@ -34,10 +34,6 @@ def mock_past_competitions():
     return server.competitions
 
 
-# @pytest.fixture
-# def mock_save_json(mocker):
-#     return mocker.patch('server.saveJson', side_effect=lambda x, y: None)
-
 @pytest.fixture
 def mock_save_json():
     """
@@ -46,14 +42,3 @@ def mock_save_json():
     """
     server.saveJson = lambda x, y: None
     return server.saveJson
-
-# @pytest.fixture
-# def mock_save_data(monkeypatch):
-#     def mock_save_clubs():
-#         pass
-#
-#     def mock_save_competitions():
-#         pass
-#
-#     monkeypatch.setattr('server.saveClubs', mock_save_clubs)
-#     monkeypatch.setattr('server.saveCompetitions', mock_save_competitions)

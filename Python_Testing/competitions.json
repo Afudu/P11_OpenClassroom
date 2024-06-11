@@ -3,12 +3,26 @@
         {
             "name": "Spring Festival",
             "date": "2020-03-27 10:00:00",
-            "numberOfPlaces": "25"
+            "maxNumberOfPlaces": "25",
+            "placesAvailable": "0"
         },
         {
             "name": "Fall Classic",
             "date": "2020-10-22 13:30:00",
-            "numberOfPlaces": "13"
+            "maxNumberOfPlaces": "13",
+            "placesAvailable": "2"
+        },
+        {
+            "name": "Leixlip Festival",
+            "date": "2024-10-22 13:30:00",
+            "maxNumberOfPlaces": "20",
+            "placesAvailable": "20"
+        },
+        {
+            "name": "Jazz Festival",
+            "date": "2024-11-22 13:30:00",
+            "maxNumberOfPlaces": "5",
+            "placesAvailable": "5"
         }
     ]
 }
