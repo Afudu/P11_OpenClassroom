@@ -19,11 +19,11 @@ debugging and adding new features.
 
 The code for the initial phase is placed in this [repo]
 (https://github.com/OpenClassrooms-Student-Center/Python_Testing) and addresses 
-the following 4 functionalities for club secretaries:
+the following functionalities for club secretaries:
 
   * Login: They can log in using their email.
 
-  * Viewing Competition List:** They can view a list of upcoming competitions.
+  * Viewing Competition List: They can view a list of upcoming competitions.
 
   * Booking Places:** They can select a competition and use points to book places.
 
