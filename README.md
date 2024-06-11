@@ -54,6 +54,8 @@ in no more than 5 seconds, and no more than 2 seconds to update the points total
 
   2.	**Phase 2 Implementation:** Add the functionalities and requirements specified for Phase 2.
 
+  * **Testing**: Each bug fixed or feature added is tested to ensure its full functionality.
+
 # Requirement
 
 Latest version of Python must be installed.
