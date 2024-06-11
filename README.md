@@ -23,42 +23,44 @@ The application is built with Flask - a Python framework, and stores data in JSO
 to avoid database dependencies.
 
 **Phase 1:**
+
 The code for the initial phase is placed in this [repo]
 (https://github.com/OpenClassrooms-Student-Center/Python_Testing) and addresses 
 the following 4 functionalities for club secretaries:
 
-**Login:** They can log in using their email.
+  * Login: They can log in using their email.
 
-**Viewing Competition List:** They can view a list of upcoming competitions.
+  * Viewing Competition List:** They can view a list of upcoming competitions.
 
-**Booking Places:** They can select a competition and use points to book places.
+  * Booking Places:** They can select a competition and use points to book places.
 
-    Points used will be deducted from their total.
+     Points used will be deducted from their total.
 
-    Each place booked reduces the competition places and the club's points by 1.
+     Each place booked reduces the competition places and the club's points by 1.
 
-    Booking Restrictions: Secretaries cannot book more than the available spots, 
-    more than they can purchase,exceed 12 spots per competition, or book past competitions.
+     Booking Restrictions: Secretaries cannot book more than the available spots, 
+     more than they can purchase,exceed 12 spots per competition, or book past competitions.
 
-    If the booking is successful, a confirmation message is displayed; else, an explicit error message 
-    is displayed.
+     If the booking is successful, a confirmation message is displayed; else,
+     an explicit error message is displayed.
 
-**Logout:** They can log out of the system.
+  * Logout: They can log out of the system.
 
 **Phase 2:**
+
 The second phase introduces:
 
-**Public Points Board:** A public, read-only board displaying the points available for each club
-without requiring login.
+  **Public Points Board:** A public, read-only board displaying the points available for each club
+  without requiring login.
 
-**Performance Requirements:** Efficient build and rendering times, ensuring competition lists are retrieved 
-in no more than 5 seconds, and no more than 2 seconds to update the points total.
+  **Performance Requirements:** Efficient build and rendering times, ensuring competition lists are retrieved 
+  in no more than 5 seconds, and no more than 2 seconds to update the points total.
 
 # Immediate Tasks:
 
-1.	**Bug Fixing:** Resolve the bugs in Phase 1 and implement error handling.
+  1.	**Bug Fixing:** Resolve the bugs in Phase 1 and implement error handling.
 
-2.	**Phase 2 Implementation:** Add the functionalities and requirements specified for Phase 2.
+  2.	**Phase 2 Implementation:** Add the functionalities and requirements specified for Phase 2.
 
 # Requirement
 
@@ -101,19 +103,25 @@ The following commands rely on the knowledge of how to use the terminal (Unix, m
   * Unix/macOS/Windows: pip install -r requirements.txt
 
 # Running the application
-**Move to the folder**
-  * Unix/macOS/Windows: cd Python_testing
-**Start the server**
-  * export FLASK_APP=server
-  * export FLASK_ENV=development
-  * flask run
 
-**Windows:**
-  * set FLASK_APP=server
-  * set FLASK_ENV=development
-  * flask run
+**Move to the folder**
+
+  * Unix/macOS/Windows: cd Python_testing
+
+**Start the server**
+
+  * Unix/macOS
+    * export FLASK_APP=server
+    * export FLASK_ENV=development
+    * flask run
+
+  * Windows:
+    * set FLASK_APP=server
+    * set FLASK_ENV=development
+    * flask run
 
 After the server has started,  navigate to http://127.0.0.1:5000/ to check the app.
+
 The email addresses to log in with are in the file clubs.json located in the Python_Testing folder.
 
 # Testing
