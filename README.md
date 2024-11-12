@@ -6,25 +6,21 @@
 
 **Date:** 20/05/2024
 
-## Project Scope
-The project involves enhancing the Python web application used by Güdlft, a company that organizes regional competitions.
+## Abstract
+The project involves enhancing the Python web application used by Güdlft, 
+a company that organizes regional competitions.
 
 The application is built with Flask - a Python framework, and stores data in JSON files 
 to avoid database dependencies.
 
-The enhancements are broken into phases, following the functional requirements, with a focus on testing, 
-debugging and adding new features.
+The initial code is placed in this [repo](https://github.com/OpenClassrooms-Student-Center/Python_Testing/)
+and should allow the following functionalities to the club secretaries:
 
-**Phase 1:**
+  * They can log in using their email.
 
-The code for the initial phase is placed in this [repo](https://github.com/OpenClassrooms-Student-Center/Python_Testing/)
-and addresses the following functionalities for club secretaries:
+  * They can view a list of upcoming competitions.
 
-  * **Login:** They can log in using their email.
-
-  * **Viewing Competition List:** They can view a list of upcoming competitions.
-
-  * **Booking Places:** They can select a competition and use points to book places.
+  * They can select a competition and use points to book places.
 
      - Points used will be deducted from their total.
 
@@ -36,25 +32,26 @@ and addresses the following functionalities for club secretaries:
      - If the booking is successful, a confirmation message is displayed; else,
      an explicit error message is displayed.
 
-  * **Logout:** They can log out of the system.
+  * They can log out of the system.
+
+## Enhancements and immediate tasks
+
+The enhancements are broken into phases, with a focus on testing, 
+debugging and adding new features.
+
+**Phase 1:**
+The first phase involves testing and fixing the bugs in the initial code.
+ 
 
 **Phase 2:**
+The second phase introduces new functionalities to be added to the application:
 
-The second phase introduces:
-
-  * Public Points Board: A public, read-only board displaying the points available for each club
+  * Public Points Board: a public, read-only board displaying the points available for each club
    without requiring login.
 
-  * Performance Requirements: Efficient build and rendering times, ensuring competition lists are retrieved 
+  * Efficient build and rendering times: ensuring competition lists are retrieved 
 in no more than 5 seconds, and no more than 2 seconds to update the points total.
 
-## Immediate Tasks:
-
-  1.	**Bug Fixing:** Resolve the bugs in Phase 1 and implement error handling.
-
-  2.	**Phase 2 Implementation:** Add the functionalities and requirements specified for Phase 2.
-
-  * **Testing**: Each bug fixed or feature added is tested to ensure its full functionality.
 
 ## Requirement
 
@@ -68,40 +65,48 @@ The following commands rely on the knowledge of how to use the terminal (Unix, m
 
 **1 - Get the code**
 
-   ```bash
-   git clone https://github.com/Afudu/P11_OpenClassroom.git
-   ```
+  * Unix/macOS/Windows
+
+    ```bash
+    git clone https://github.com/Afudu/P11_OpenClassroom.git
+    ```
 
 **2 - Move to the folder**
 
   * Unix/macOS/Windows
-   ```bash
-   cd P11_OpenClassroom
-   ```  
+
+    ```bash
+    cd P11_OpenClassroom
+    ```  
 
 **3 - Create a virtual environment**
 
   * Unix/macOS
+
     ```bash
     python3 -m venv pythonenv
-     ```
+    ```
+    
   * Windows
+
     ```bash
     py -m venv pythonenv
     ```
   
-    * Note: you can create the virtual environment in another folder, then move to that folder to run the command above.
-    * Example: in the above command, our virtual environment created is called pythonenv. 
-      You can give a different name.
+  * Note: you can create the virtual environment in another folder, then move to that folder to run the command above.
+  * Example: in the above command, our virtual environment created is called pythonenv. 
+    You can give a different name.
 
 **4 - Activate the virtual environment created**
 
   * Unix/macOS
+
     ```bash
     source pythonenv/bin/activate
     ```
 
   * Windows
+
     ```bash
     pythonenv\Scripts\activate
     ```
@@ -109,13 +114,15 @@ The following commands rely on the knowledge of how to use the terminal (Unix, m
 **5 - Securely upgrade pip**
 
   * Unix/macOS/Windows
-  ```bash
- pip install --upgrade pip
- ```
+
+    ```bash
+    py -m pip install --upgrade pip
+    ```
 
 **6 - Install all dependencies**
 
   * Unix/macOS/Windows
+
     ```bash
     pip install -r requirements.txt
     ```
@@ -125,13 +132,15 @@ The following commands rely on the knowledge of how to use the terminal (Unix, m
 **Move to the folder**
 
   * Unix/macOS/Windows
-  ```bash
-  cd Python_testing
-  ```
+
+    ```bash
+    cd Python_testing
+    ```
 
 **Start the server**
 
   * Unix/macOS
+
     ```bash
     export FLASK_APP=server
     export FLASK_ENV=development
@@ -139,6 +148,7 @@ The following commands rely on the knowledge of how to use the terminal (Unix, m
     ```
 
   * Windows
+
     ```bash
      set FLASK_APP=server
      set FLASK_ENV=development
@@ -150,70 +160,85 @@ After the server has started,  navigate to http://127.0.0.1:5000/ to check the a
 The email addresses to log in with are in the file clubs.json located in the Python_Testing folder.
 
 ## Testing
-The application functionalities have been tested with pytest - a Python testing framework, 
+The application functionalities have been tested with ```pytest``` - a Python testing framework, 
 and coverage - a tool for measuring code coverage of Python programs, with a code coverage of 98%.
 
-The tests are categorized and located in the tests/ folder.
+The tests are categorized and located in the ```tests``` folder.
 
-**Test Execution:** Unix/macOS/Windows
-
-* To run all the tests use:
-  ```bash
-  pytest
-  ```
+  * To run all the tests use:
+  
+    ```bash
+    pytest
+    ```
 
 * To measure the code coverage of all tests use:
-  ```bash
-  coverage run -m pytest
-  ```
+  
+    ```bash
+    coverage run -m pytest
+    ```
 
 *  To view a simple coverage report use:
-   ```bash
-   coverage report
-   ```
+
+     ```bash
+      coverage report
+     ```
 
 * To run a single test use: 
-  ```pytest [followed by the path to the test file]```
-  * Examples: 
-    * Unix/macOS
+
+   ```pytest [followed by the path to the test file]```
+
+   * Examples: 
+  
+     * Unix/macOS
       ```pytest ./tests/unit_tests/test_logout.py```
-    * Windows:
-      ```pytest .\tests\unit_tests\test_logout.py```
+    
+     * Windows:
+     ```pytest .\tests\unit_tests\test_logout.py```
 
  
-* Note : when running the tests, the test data is not saved in the JSON files to preserve data integrity after tests. 
+   * Note : when running the tests, the test data is not saved in the JSON files to preserve data integrity after tests. 
 
 ## Performance Test
-The performance of the application has been tested with Locust, with the rendering times adhering
+
+The performance of the application has been tested with ```Locust```, with the rendering times adhering
 to the functional requirements : less than 5 seconds to retrieve data, and less than 2 seconds to update data.
 
 To run a performance test, with the application server running:
 
-1 - Move to the folder where the file locustfile.py located
-```bash
-cd tests\performance_tests
-```
+1 - Move to the folder where the file ```locustfile.py``` is located.
+
+   * Unix/macOS/Windows
+
+     ```bash 
+      cd tests\performance_tests
+     ```
 
 2 - Run the locust command:
-```bash
-locust
-```
 
-3 Then go to http://localhost:8089/
+   * Unix/macOS/Windows
 
-4 - Enter the host url http://127.0.0.1:5000/ , default number of users = 6, then click start.
+     ```bash
+      locust
+     ```
+
+3 - Then go to http://localhost:8089/
+
+4 - Type the host url http://127.0.0.1:5000/ , default number of users = 6, then click start.
 
 ## PEP 8 adherence
 
-The folder 'flake_report' in the repository contains an HTML report generated by flake8-html which displays no errors.
-A new report can be generated by running the following command in the terminal (Unix, macOS) 
-or command line (Windows): 
-```bash
-flake8
-```
+The folder ```flake_report``` in the repository contains an HTML report generated by flake8-html which displays no errors. 
 
-The file setup.cfg in the root of the repository contains the settings used to generate the report.
+A new report can be generated by running the following command:
 
-## Reporting
-The test coverage, performance test, and PEP 8 adherence reports are located in the reports/ folder located in the root 
+  * Unix/macOS/Windows
+
+    ```bash
+    flake8
+    ```
+
+The file ```setup.cfg``` in the root of the repository contains the settings used to generate the report.
+
+## Reports
+The test coverage, performance test, and PEP 8 adherence reports are located in the ```reports``` folder located in the root 
 of the repository.
