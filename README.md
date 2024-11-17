@@ -154,7 +154,7 @@ The following commands rely on the knowledge of how to use the terminal (Unix, m
     ```bash
      set FLASK_APP=server
      set FLASK_ENV=development
-     flask run
+     flask -app server run
     ```
 
 After the server has started,  navigate to http://127.0.0.1:5000/ to check the app.
