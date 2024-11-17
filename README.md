@@ -163,7 +163,8 @@ The email addresses to log in with are in the file clubs.json located in the Pyt
 
 ## Testing
 The application functionalities have been tested with ```pytest``` - a Python testing framework, 
-and coverage - a tool for measuring code coverage of Python programs, with a code coverage of 98%.
+and ```coverage``` - a tool for measuring code coverage of Python programs, with a code coverage of 97%, 
+which is above the requirement of 60%.
 
 The tests are categorized and located in the ```tests``` folder.
 
