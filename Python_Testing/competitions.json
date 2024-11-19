@@ -14,13 +14,13 @@
         },
         {
             "name": "Leixlip Festival",
-            "date": "2024-10-22 13:30:00",
+            "date": "2025-01-22 13:30:00",
             "maxNumberOfPlaces": "20",
             "placesAvailable": "20"
         },
         {
             "name": "Jazz Festival",
-            "date": "2024-11-22 13:30:00",
+            "date": "2024-12-22 13:30:00",
             "maxNumberOfPlaces": "5",
             "placesAvailable": "5"
         }
