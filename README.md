@@ -52,8 +52,10 @@ The second phase introduces new functionalities to be added to the application:
   * Efficient build and rendering times: ensuring competition lists are retrieved 
 in no more than 5 seconds, and no more than 2 seconds to update the points total.
 
-  * Additional functionalities
+  * Additional functionalities.
 
+All the bug fixed and feature added have been created in a separate branches following the naming convention:
+````<feature/bug>/descriptive-name````.
 
 ## Requirement
 
