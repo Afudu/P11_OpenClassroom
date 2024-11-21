@@ -54,7 +54,7 @@ in no more than 5 seconds, and no more than 2 seconds to update the points total
 
   * Additional functionalities.
 
-All the bug fixed and feature added have been created in a separate branches following the naming convention:
+All the bugs fixed and features added have been created separate branches, following the naming convention:
 ````<feature/bug>/descriptive-name````.
 
 ## Requirement
