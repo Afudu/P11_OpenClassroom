@@ -32,8 +32,8 @@ The enhancements include bug fixing and adding new features.
     - more than they can purchase, 
     - exceed 12 spots per competition, 
     - book past competitions.
-5. **Booking Confirmation:** Upon booking, a confirmation or error message is displayed.
-6. **Logout:** They can log out of the system.
+6. **Booking Confirmation:** Upon booking, a confirmation or error message is displayed.
+7. **Logout:** They can log out of the system.
 
 ## Technologies Used
 - **Programming Language:** Python  
