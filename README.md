@@ -27,11 +27,11 @@ The enhancements include bug fixing and adding new features.
 2. **Viewing:** They can view all upcoming competitions.
 3. **Booking:** They can use their points to book places.
 4. **Booking fee:** Each place booked reduces the competition places and the club's points by 1.
-5. **Booking Restrictions:** Secretaries cannot: 
-    - book more than the available spots, 
+5. **Booking Restrictions:** Secretaries cannot book: 
+    - more than the available spots, 
     - more than they can purchase, 
-    - exceed 12 spots per competition, 
-    - book past competitions.
+    - more than 12 spots per competition, 
+    - past competitions.
 6. **Booking Confirmation:** Upon booking, a confirmation or error message is displayed.
 7. **Logout:** They can log out of the system.
 
