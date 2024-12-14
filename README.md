@@ -130,4 +130,11 @@ The enhancements are broken into two phases:
   ```bash
   coverage run -m pytest; locust
 
+### Reporting
+The test coverage, performance test, and PEP 8 adherence reports are located in the reports/ folder located in the root 
+of the repository.
+
+The performance of the application has been tested with Locust, with the rendering times adhering
+to the functional requirements : less than 5 seconds to retrieve data, and less than 2 seconds to update data.
+
 ## Screenshots
