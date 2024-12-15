@@ -16,6 +16,8 @@
    - [Setup on Windows](#setup-on-windows)
    - [Running the Application](#running-the-application)
    - [Linting and Testing](#linting-and-testing)
+   - [Reporting](#reporting)
+   - [Screenshots](#screenshots)
 
 ## Summary
 This project involves enhancing the [initial website](https://github.com/OpenClassrooms-Student-Center/Python_Testing/) 
