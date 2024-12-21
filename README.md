@@ -140,7 +140,7 @@ of the repository.
 - The performance of the application has been tested with ```Locust```, with the rendering times adhering
 to the functional requirements : less than 5 seconds to retrieve data, and less than 2 seconds to update data.
 
-## Screenshots
+### Screenshots
 
 ![Home Page](screenshots/home_page.png "Home Page")
 
