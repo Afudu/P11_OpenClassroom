@@ -21,7 +21,7 @@
 
 ## Summary
 This project involves enhancing the [initial website](https://github.com/OpenClassrooms-Student-Center/Python_Testing/) 
-of Güdlft, a company that organizes regional competitions.
+of **Güdlft**, a company that organizes regional competitions.
 The enhancements include bug fixing and adding new features.
 
 ## Features
@@ -47,7 +47,7 @@ The enhancements are broken into two phases:
 1. **Phase 1:** Fix the bugs in the initial code.
 2. **Phase 2:** Add a Public Points Board, and additional features.
 
-*Note:* Each bug fixed or feature added should be created in separate GitHub branches, following the naming convention:
+*Note:* Each bug fixed or feature added is created in a separate GitHub branch, following the naming convention:
 ````<feature/bug>/descriptive-name````.
 
 ## Local Development
@@ -115,6 +115,7 @@ The enhancements are broken into two phases:
    http://127.0.0.1:5000/
 
 ### Linting and Testing
+The codebase is fully linted and free of errors.
 
 - **Run Linting**
   ```bash
