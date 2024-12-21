@@ -40,7 +40,7 @@ The enhancements include bug fixing and adding new features.
 ## Technologies Used
 - **Programming Language:** Python  
 - **Framework:** Flask  
-- **Database:** Json files.
+- **Data Source:** Json files.
 
 ## Project Tasks
 The enhancements are broken into two phases:
